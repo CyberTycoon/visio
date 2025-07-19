@@ -98,7 +98,7 @@ export default function VisioDetect() {
     formData.append('file', file);
 
     try {
-      const response = await fetch('https://object-detection-model-app.onrender.com/predict/', {
+      const response = await fetch('/api/predict', {
         method: 'POST',
         body: formData,
       });
@@ -210,7 +210,7 @@ export default function VisioDetect() {
             AI-Powered Object Detection
           </h2>
           <p className="text-lg text-gray-400 max-w-3xl mx-auto">
-            Upload an image to instantly identify and locate objects from 80 different classes using the YOLOv8 model.
+            Upload an image to instantly identify and locate objects from 80 different classes using Cmputer Vision.
           </p>
         </div>
 
